@@ -1,0 +1,672 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/tazzlogo.png" type="image/x-icon">
+  <title>Welcome to Tazz Intelligence</title>
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+   body {
+ 
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+   .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+   .loader {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+}
+
+.loader img {
+    max-width: 300%;
+    max-height: 200%;
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    display: none;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+    .image{
+  width: 30%; 
+  margin-top:0.2%;
+}
+
+.sample{
+  background-color: rgb(230, 229, 229);
+  width: 100%;
+  display: block;
+  height: 45%;
+}
+.sample2{
+  background-color: rgb(230, 229, 229);
+  width: 100%;
+  display: block;
+  height: 30%;
+}
+.ad{
+  margin-bottom:20%;
+}
+.td{
+  width: 30%;
+}
+.foo{
+  background-color: black;
+  width: 100%;
+  height: 5%;
+}
+.h3{
+  color:white;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 5vh;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.scroll-to-top img {
+    width: 50px; /* Adjust the size of your logo as needed */
+    height: 50px;
+}
+.supporters {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.supporters h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.imagesu{
+  width:70%;
+}
+.supporter-carousel {
+  display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.supporter-image {
+    max-width: 100px; 
+    margin: 0 20px; 
+    animation: scroll 10s linear infinite; 
+    transition: transform 0.9s;
+
+}
+
+.supporter-image img {
+    max-width: 100%;
+    filter: grayscale(100%); 
+    transition: filter 0.5s; 
+}
+
+.supporter-image img:hover {
+    filter: grayscale(0%); 
+}
+
+.font{
+  font-family:'Times New Roman', Times, serif ;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="loader-container">
+  <div id="loader" class="loader ">
+        <img src="images/lgoo_2-removebg-preview.png" alt="Your Logo" class="pic">
+    </div>
+  </div>
+    <div id="content" style="display: none;">
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <img src="images/wp6746982.jpg" alt="">
+    </div>
+   
+    <header class="header_section">
+      <div class="header_top">
+        
+        <div class="container-fluid header_top_container">
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        
+          </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand " href="index.html">                   <img src="images/lgoo_2-removebg-preview.png" class="image">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+               
+                
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>
+                      Login
+                    </span>
+                  </a>
+                </li>
+               </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+ 
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-lg-10 col-md-11 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      We Provide <br>
+                      The service to keep you engaged!
+                      </h1>
+                    <p>
+                      Travel, Games, Books, Movies!
+                    </p>
+                    <div class="btn-box">
+                      <a href="MY APPLICATION" class="btn1">
+                          Download Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                </div>
+    </section>
+  </div>
+  
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Our <span>Features</span>
+          </h2>
+          <p>
+            There are a variety of features that has been programmed into Tazz Intelligence
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/touristicon.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Tourist Spots
+                </h5>
+                <p>
+                  The application can used to be tourist spot finder as it been programmed to explore and view pictures/videos of the world around you by just a click!
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/moviesicon.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Movies 
+                </h5>
+                <p>
+                  The application has access to recent and past years movies and the rankings based on users reviews and box office collections. 
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/booksicon.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Books
+                </h5>
+                <p>
+                  The application can used as a book finder for book lovers and people who would love to start reading so that they can raad public fvorite books and enjoy every genre.
+                </p>
+                <a href="">
+                  Read More
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/gamesicon.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Games
+                </h5>
+                <p>
+                  The appication also has a set of games such as chess, puzzle/maze, race, etc. Addionally, tell the gmost played games based on downloads on app/play/microsoft store.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="sample">
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2 id="about">
+                About <span>Us</span>
+              </h2>
+            </div>
+            <p>
+              We are company that provide an app that can keep you enanage during your leisure time!
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/bow.png" alt="logo" width="50%">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section></div><br>
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="font">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Samples <span>of Tazz</span>
+              </h2>
+               <p>
+              The following examples present how Tazz Intelligence work during your exprience with the app.
+            </p>
+            </div><table><tr class="td" ><td class="td">
+           <div class="sample">
+            <p><pre><b>User</b>        Hi what are some of the most beautiful places in japan?</pre></p>
+           </div>
+           <p><pre><b>Tazz</b>         Some of the great places in Japan are </pre></p>
+           <section class="team_section layout_padding">
+            <div class="container">
+              <div class="heading_container heading_center">
+           <div class="row">
+            <div class="col-md-4 col-sm-6 mx-auto">
+              <div class="box" class="ad">
+                <div class="img-box">
+                  <img src="images/10d5e3142776847258dd43efd46c626a.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+Mt.Fuji
+                  </h5>
+                  <h6 class="">
+                    Shizuoka 
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mx-auto">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/busiest-theme-parks-2014-1.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                   Disney World
+                  </h5>
+                  <h6 class="">
+                    Tokyo
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mx-auto">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/R.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Okinawa
+                  </h5>
+                  <h6 class="">
+                    Okinawa
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </td> 
+          <td><br>
+            <div class="sample">
+             <p><pre><b>User</b>        Hi what are some of the most famous movies in the world?</pre></p>
+            </div>
+            <p><pre><b>Tazz</b>          Would it be possible to specfiy the range? </pre></p>
+            <div class="sample">
+              <p><pre><b>User</b>        From 2020 ~ today</pre></p>
+             </div>
+             <p><pre><b>Tazz</b>          Fantastic, some of the famous movies from 2020 are <br>
+              "Parasite" - Directed by Bong Joon-ho, this South Korean dark comedy-thriller 
+              made history by winning the Best Picture Oscar at the 92nd Academy Awards. 
+              It's a thought-provoking exploration of social class and inequality.
+
+              "Nomadland" - Directed by Chloé Zhao, this film won the Best Picture Oscar at the 
+              93rd Academy Awards. It follows the journey of a woman, played by Frances 
+              McDormand, who becomes a modern-day nomad in the American West during the Great 
+              Recession.
+              
+              "Minari" - Directed by Lee Isaac Chung, "Minari" is a touching family drama that tells
+               the story of a Korean-American family trying to build a new life in 
+              rural Arkansas. It received critical acclaim for its performances and storytelling.
+              
+              "Promising Young Woman" - Directed by Emerald Fennell, this dark comedy thriller stars 
+              Carey Mulligan as a woman seeking vengeance against those who wronged
+               her in the past. It received praise for its unique and thought-provoking take on the #MeToo 
+               movement.
+              
+              "Sound of Metal" - Directed by Darius Marder, this film stars Riz Ahmed as a heavy metal drummer
+               who begins to lose his hearing. The film received acclaim 
+              for its sound design and Ahmed's performance.</pre></p>
+              <div class="sample">
+                <p><pre><b>User</b>        Wow I shall watch these movies</pre></p>
+               
+               </div>
+               <p><pre><b>Tazz</b>          Great, all these movies have a positive review and an impact on the Film industry </pre></p>
+               <div class="sample">
+                <p><pre><b>User</b>        Cool!</pre></p>
+               
+               </div>
+               <p><pre><b>Tazz</b>         😊 </pre></p>
+  </table></div>
+  </section><div class="sample2">
+  <section id="supporters" class="supporters">
+    <h2>Supporters</h2>
+    <div class="supporter-carousel">
+        <div class="supporter-image"><a href=""><img src="images/logo-removebg-preview.png" class="imagesu" alt="Supporter 1"></a></div>
+        <div class="supporter-image"><a href=""><img src="images/tazzlogo.png" alt="Supporter 2"></a></div>
+        <div class="supporter-image"><a href=""><img src="images/tazzlogo.png" alt="Supporter 3"></a></div>
+         <div class="supporter-image"><a href=""><img src="images/tazzlogo.png" alt="Supporter 4"></a></div>
+         <div class="supporter-image"><a href=""><img src="images/tazzlogo.png" alt="Supporter 5"></a></div>
+         <div class="supporter-image"><a href=""><img src="images/tazzlogo.png" alt="Supporter 6"></a></div>
+         
+    </div>
+</section></div>
+
+   <section class="info_section ">
+    <div class="container">
+      <div class="info_top">
+        <div class="row">
+          <div class="col-md-3 ">
+            <a class="navbar-brand" href="index.html">
+Tazz  <br>Intelligence
+            </a>
+          </div>
+          <div class="col-md-5 ">
+            <div class="info_contact">
+            
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                 070 1234 5678
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-email" aria-hidden="true"></i>
+                <span>
+                tazzintel@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="info_detail">
+              <h5>
+                Organization
+              </h5>
+              <p>
+               An AI application that keeps you enagaged througout your weekened/vacation!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info_form">
+              <h5>
+                Services
+              </h5>
+              <p>
+               Tourist spots to suport and help people who cannot select a good place for vacation, movies books, games.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="info_detail">
+              <div class="">
+                <h5>
+                  Useful links
+                </h5>
+                <ul class="info_menu">
+                  <li>
+                    <a href="index.html">
+                      Home
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#about">
+                      About
+                    </a>
+                  </li>
+                  
+                  <li class="mb-0">
+                    <a href="contact.html">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <img src="images/tazzlogo.png" width="170%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="foo">
+   <p class="h3" > © 2023 All Rights Reserved By Tazz Intelligence</p>
+  </div>
+  <div id="scroll-to-top" class="scroll-to-top">
+    <img src="images/tazzlogo.png" alt="Your Logo">
+</div>
+</div>
+
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const loader = document.getElementById("loader");
+    loader.style.opacity = "1";
+
+    setTimeout(function () { 
+        loader.style.opacity = "0";
+        setTimeout(function () {
+            loader.style.display = "none"; 
+            const content = document.getElementById("content");
+            content.style.display = "block";
+            content.style.opacity = "1";
+        }, 1000); 
+    }, 2000); 
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Show the scroll-to-top button when scrolling down
+    const scrollToTopButton = document.getElementById("scroll-to-top");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            scrollToTopButton.style.opacity = "1";
+        } else {
+            scrollToTopButton.style.opacity = "0";
+        }
+    });
+
+    // Scroll to the top when the button is clicked
+    scrollToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
+
+</script>
+
+  
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+ 
+  <script src="js/custom.js"></script>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+</body>
+
+</html>
