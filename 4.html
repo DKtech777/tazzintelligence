@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .bg-image {
+            background-image: url('scss.jpg'); /* Replace with your image URL */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+        }
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            color: white;
+            animation: fadeIn 2s;
+            max-height: 90%; /* Ensure it fits within the viewport */
+            overflow-y: auto; /* Add scroll within the content if necessary */
+       
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            max-width: 100%;
+            max-height: 100%;
+            overflow-y: auto; /* Add scroll within the container if necessary */
+            text-align: left;
+
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="content">
+        <div class="container">
+            <h1>Methodology</h1>
+            <p><b>Method of Data Collection
+                :</b><br>Participants<br> The study will involve 28 participants, randomly divided into two groups of 14 each. The participants will be selected to ensure a diverse representation in terms of age, gender, and background, although specific demographic controls are not necessary for this level of experiment.
+<br><br>Materials:
+
+<ul>
+    <li>Two pre-recorded audio tracks: one of high traffic noise (simulating heavy traffic conditions) and one of low residential noise.
+    </li>
+    <li>Headphones for participants to listen to the audio tracks.
+    </li>
+    <li>Stress level assessment tool: a standardized stress questionnaire (e.g., Perceived Stress Scale - PSS) to measure self-reported stress levels.
+    </li>
+    <li>A quiet room for the pre- and post-exposure stress assessments.
+    </li>
+    <li>Computer or mobile devices to administer and collect questionnaire data.
+    </li>
+</ul>
+                <br><br>
+                Procedure:<br>
+                Initial Stress Level Assessment:
+
+<br>Each participant will complete a stress questionnaire to assess their baseline stress level before exposure to any noise. This serves as the initial stress level measurement.
+<br>
+         <br>Exposure to Noise:
+
+<ul>
+    <li>Group A (High Noise Exposure): Participants in this group will be exposed to the high traffic noise track for 20 minutes through headphones.
+    </li>
+    <li>Group B (Low Noise Exposure): Participants in this group will be exposed to the low residential noise track for 20 minutes through headphones.
+    </li>
+</ul><br>
+<br>Post-Exposure Stress Level Assessment:
+<br><br>
+Immediately after the exposure period, participants will complete the same stress questionnaire to assess their stress level after noise exposure. This serves as the post-exposure stress level measurement.
+
+         <br><br>
+         Data Recording:
+         <br>
+         Record each participant's initial and post-exposure stress levels. Calculate the change in stress levels for each participant by subtracting the initial stress level from the post-exposure stress level.
+         <br><br>
+         <b>Data Analysis:</b><br>
+         Descriptive Statistics:
+
+<br><ul>
+    <li>Calculate the mean, median, and standard deviation of the initial and post-exposure stress levels for both groups.
+    </li>
+    <li>Calculate the mean change in stress levels for both groups.
+    </li>
+</ul>
+<br>Comparative Analysis:
+<br>
+Use a t-test to compare the mean change in stress levels between Group A and Group B to determine if the differences are statistically significant.
+<br>
+Interpretation:
+<br>
+Analyze the results to see if there is a significant increase in stress levels in Group A (high noise exposure) compared to Group B (low noise exposure). This will help in determining whether the hypothesis is supported.
+<br>
+Control Measures:
+<br><ul>
+    <li>Ensure that the noise levels of the recordings are accurately set to represent high and low noise conditions.
+    </li>
+    <li>Conduct the experiment in a controlled environment to minimize external factors influencing stress levels.
+    </li>
+    <li>Use the same set of headphones and volume settings for all participants to ensure consistency in noise exposure.
+    </li>
+</ul>
+
+
+                <br>
+                Previous research has consistently shown a correlation between noise exposure and increased stress levels. Studies have demonstrated that individuals living in high-traffic areas report higher stress and annoyance levels compared to those in quieter residential areas. These findings support the hypothesis that higher noise levels contribute to increased stress.
+
+                <br><br>
+                Urban Environment Considerations:
+<br>
+In urban environments, where traffic noise is a common and unavoidable aspect of daily life, understanding its impact on stress is crucial for public health. By studying the differential effects of high and low noise levels, this experiment aims to provide actionable insights that can inform urban planning and public health interventions aimed at reducing noise pollution and its associated health impacts.
+
+</p>
+            <a href="5.html" class="button">Click Here to visit Modeling the data</a>
+
+        </div>
+    </div>
+</body>
+</html>

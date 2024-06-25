@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .bg-image {
+            background-image: url('scss.jpg'); /* Replace with your image URL */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+        }
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            color: white;
+            animation: fadeIn 2s;
+            max-height: 90%; /* Ensure it fits within the viewport */
+            overflow-y: auto; /* Add scroll within the content if necessary */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            max-width: 100%;
+            max-height: 100%;
+            overflow-y: auto; /* Add scroll within the container if necessary */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="content">
+        <div class="container">
+            <h1>Scientific Reasoning Basis for the Hypothesis</h1>
+            <p><b>Hypothesis:</b> Exposure to high levels of traffic noise will significantly increase the stress levels of participants compared to exposure to low levels of traffic noise.
+
+                <br><br>
+                Reasoning::<br><br>
+                Physiological Stress Response to Noise:
+
+         <br>
+         High levels of noise are known to activate the hypothalamic-pituitary-adrenal (HPA) axis, leading to the release of stress hormones such as cortisol. These hormones prepare the body to deal with perceived threats, resulting in elevated heart rate, increased blood pressure, and heightened alertness. Prolonged or repeated activation of this stress response can lead to chronic stress, impacting overall health and well-being.
+
+         <br><br>
+         Psychological Impact of Noise:
+         <br>
+         Noise can be a significant psychological stressor, particularly when it is unpredictable, uncontrollable, or perceived as annoying. High noise levels, such as those experienced during heavy traffic, can cause discomfort, irritability, and anxiety, contributing to elevated stress levels. In contrast, lower noise levels, typical of residential areas, are less likely to trigger a significant stress response.
+
+         <br><br>
+         Empirical Evidence:
+
+                <br>
+                Previous research has consistently shown a correlation between noise exposure and increased stress levels. Studies have demonstrated that individuals living in high-traffic areas report higher stress and annoyance levels compared to those in quieter residential areas. These findings support the hypothesis that higher noise levels contribute to increased stress.
+
+                <br><br>
+                Urban Environment Considerations:
+<br>
+In urban environments, where traffic noise is a common and unavoidable aspect of daily life, understanding its impact on stress is crucial for public health. By studying the differential effects of high and low noise levels, this experiment aims to provide actionable insights that can inform urban planning and public health interventions aimed at reducing noise pollution and its associated health impacts.
+
+</p>
+            <a href="4.html" class="button">Click Here to visit Methodology</a>
+
+        </div>
+    </div>
+</body>
+</html>

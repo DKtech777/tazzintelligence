@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .bg-image {
+            background-image: url('scss.jpg'); /* Replace with your image URL */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+        }
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            color: white;
+            animation: fadeIn 2s;
+            max-height: 90%; /* Ensure it fits within the viewport */
+            overflow-y: auto; /* Add scroll within the content if necessary */
+       
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            max-width: 100%;
+            max-height: 100%;
+            overflow-y: auto; /* Add scroll within the container if necessary */
+            text-align: left;
+
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="content">
+        <div class="container">
+            <h1>Results</h1>
+          <a href="Sheet1.html" target="_blank">Click here to visit the data in detail</a>
+          <br><b>Team A: Results</b><br>
+          <img src="image1.jpg"><br>
+          <b>Team B: Results</b><br>
+          <img src="image2.jpg"><br>
+          <b>Statistical Analysis </b>
+          <br>
+          1. Descriptive Statistics:
+<br>Group A (High Noise Exposure):
+<ul>
+    <li>Mean Change in Stress: 1.357    </li>
+<li>Median Change in Stress: 1
+</li>
+<li>Standard Deviation: 0.878</li>
+
+<br>Group B (Low Noise Exposure):
+<ul>
+    <li>Mean Change in Stress: -0.643    </li>
+<li>Median Change in Stress: -1
+</li>
+<li>Standard Deviation: 0.806
+</li>
+
+</ul>
+
+<b>2. Correlation Analysis:</b><br>
+To determine the correlation between initial stress levels and changes in stress levels, we can calculate the Pearson correlation coefficient for both groups.
+
+<br>Group A (High Noise Exposure):
+<br>Pearson correlation coefficient (r): 0.603
+
+<br>Group B (Low Noise Exposure):
+<br>Pearson correlation coefficient (r): -0.457
+<br>
+Interpretation:
+<br><ul>
+    <li>In Group A, there is a moderate positive correlation between initial stress levels and changes in stress levels, suggesting that higher initial stress levels are associated with greater increases in stress after high noise exposure.
+    </li>
+    <li>In Group B, there is a moderate negative correlation between initial stress levels and changes in stress levels, indicating that higher initial stress levels are associated with greater decreases in stress after low noise exposure.
+    </li>
+</ul>
+<br>
+3. Function of Best Fit:
+<br>
+Given the nature of the data, a linear model is appropriate for analyzing the relationship between initial stress levels and changes in stress levels. The scatter plots for both groups suggest a linear trend.
+<br>Group A (High Noise Exposure):
+<br>
+--> Linear Equation: y=0.573x+0.571<br>
+Where 
+y, y is the change in stress level, and x, x is the initial stress level.
+<br>
+Group B (Low Noise Exposure):
+<br>
+Linear Equation: y=-0.5x - 0.143<br>
+Where 
+y, y is the change in stress level, and 
+x, x is the initial stress level.<br>
+<b>Results Summary:</b>
+<ul>
+    <li>Group A (High Noise Exposure): Participants generally experienced an increase in stress levels, with a mean increase of 1.357. The correlation between initial stress levels and changes in stress levels was moderately positive.
+    </li>
+    <li>Group B (Low Noise Exposure): Participants generally experienced a decrease in stress levels, with a mean decrease of -0.643. The correlation between initial stress levels and changes in stress levels was moderately negative.
+    </li>
+    <li>Overall Conclusion: The results support the hypothesis that exposure to high levels of traffic noise increases stress levels, while exposure to low levels of residential noise decreases stress levels. The linear models provide a reasonable fit for the observed data, indicating a consistent trend across participants.
+    </li>
+</ul>
+
+            <a href="6.html" class="button">Click Here to visit Conclusion</a>
+
+        </div>
+    </div>
+</body>
+</html>

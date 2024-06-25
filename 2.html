@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .bg-image {
+            background-image: url('scss.jpg'); /* Replace with your image URL */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+        }
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            animation: fadeIn 2s;
+            max-height: 90%; /* Ensure it fits within the viewport */
+            overflow-y: auto; /* Add scroll within the content if necessary */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            max-width: 100%;
+            max-height: 100%;
+            overflow-y: auto; /* Add scroll within the container if necessary */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="content">
+        <div class="container">
+            <h1>Background Theory</h1>
+            <p>What is the scientific background knowledge required to understand this topic?<br><br>
+                Noise Pollution:<br><br>
+                Noise pollution refers to unwanted or harmful sounds that disrupt the normal acoustic environment. It is primarily caused by human activities, such as industrial operations, transportation (vehicles, airplanes, trains), and urban development. In urban settings, traffic noise is a significant contributor to overall noise pollution. The intensity of noise is measured in decibels (dB), with levels above 85 dB considered harmful over prolonged exposure.
+
+                <br>
+                Stress:
+                <br>
+                Stress is the body's response to perceived threats or demands. It triggers a cascade of physiological and psychological changes, collectively known as the "stress response." Key hormones such as cortisol and adrenaline are released, preparing the body for a "fight or flight" response. Chronic exposure to stressors can lead to various health issues, including hypertension, anxiety, depression, and weakened immune function. Stress levels can be assessed through both objective measures (e.g., heart rate, cortisol levels) and subjective measures (e.g., self-reported surveys and questionnaires).
+                <br>
+                Human Auditory System:
+                <br>
+                The human auditory system detects and processes sound waves, converting them into neural signals that the brain interprets. Prolonged exposure to high noise levels can damage the auditory system, leading to hearing loss and other auditory disorders. Additionally, the brain's response to noise involves activating the stress response, especially if the noise is perceived as a threat or nuisance.
+
+                <br>
+                Environmental Science and Urban Ecology:
+                <br>
+                Environmental science examines the interactions between the natural environment and human activities. Urban ecology focuses on how urban environments, including noise levels, affect both human and ecological health. Understanding these interactions is crucial for developing sustainable urban planning and public health policies.
+            </p>
+            <a href="3.html" class="button">Click Here to visit scientific reasoning basis</a>
+
+        </div>
+    </div>
+</body>
+</html>

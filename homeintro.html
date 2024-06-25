@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Lab Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="curved-rectangle">
+            <div class="character">
+                <p id="dialogue">Hello, wanna know the research question for the experiment?</p>
+                <button id="yesButton">Yes</button>
+                <p id="researchQuestion" style="display: none;">How does exposure to different levels of traffic-related noise pollution affect stress levels in individuals?</p>
+                <button id="rationaleButton" style="display: none;">Reasoning/Rationale</button>
+                <p id="rationaleSubtext" style="display: none;">Real world significance of exploring this question</p>
+            </div>
+        </div>
+
+        <div class="left-content" id="objectiveContent" style="display: none;">
+            <h2 class="objective-title">Objective</h2>
+              <button id="objectiveButton" class="rgb-button">Wanna know the objective?</button>
+        </div>
+    </div>
+
+    <div id="rationaleContent" class="rationale-content" style="display: none;">
+        <!-- Button for objective will appear here -->
+       <a href="2.html"> <button id="objectiveFadeInButton" style="display: none;" class="fade-in-button">Wanna know the objective?</button></a>
+    </div>
+
+    <script>
+        document.getElementById('yesButton').addEventListener('click', function() {
+            const researchQuestion = document.getElementById('researchQuestion');
+            researchQuestion.style.display = 'block';
+            researchQuestion.classList.add('fade-in');
+            document.getElementById('rationaleButton').style.display = 'block';
+            document.getElementById('rationaleSubtext').style.display = 'block';
+        });
+
+        document.getElementById('rationaleButton').addEventListener('click', function() {
+            const content = `Rationale and Real-World Significance
+            Traffic-related noise pollution is a pervasive environmental issue, particularly in urban areas where high volumes of vehicular traffic are commonplace. The World Health Organization (WHO) has identified noise pollution as a significant public health concern, linking it to various adverse health effects, including increased stress, cardiovascular diseases, and sleep disturbances. Given the rising levels of urbanization and the consequent increase in traffic density, it is crucial to understand how different levels of traffic noise impact human health, particularly stress levels.
+            
+            Stress is a physiological response to perceived threats or demands and can be measured through various biomarkers, including heart rate, cortisol levels, and subjective assessments such as surveys and questionnaires. Chronic stress has been linked to numerous health issues, including hypertension, anxiety, depression, and weakened immune function. By exploring the relationship between traffic noise and stress, this study aims to provide insights that could inform urban planning and public health policies aimed at mitigating the adverse effects of noise pollution.
+            
+            The real-world significance of this research lies in its potential to influence urban design and traffic management strategies. For instance, understanding the stress-inducing effects of high noise levels could lead to the implementation of noise-reducing measures such as sound barriers, improved vehicle emissions standards, and better traffic flow management. Moreover, it could inform public health initiatives aimed at raising awareness about the impacts of noise pollution and promoting stress-reducing activities in high-noise environments.`;
+
+            document.querySelector('.curved-rectangle').style.display = 'none';
+            const rationaleContent = document.getElementById('rationaleContent');
+            rationaleContent.style.display = 'block';
+
+            let i = 0;
+            function typeWriter() {
+                if (i < content.length) {
+                    rationaleContent.innerHTML += content.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 5); // Faster animation speed
+                } else {
+                    document.getElementById('objectiveFadeInButton').style.display = 'block';
+                    document.getElementById('objectiveFadeInButton').classList.add('fade-in');
+                }
+            }
+            typeWriter();
+        });
+
+        document.getElementById('objectiveButton').addEventListener('click', function() {
+            const objectiveContent = document.getElementById('objectiveContent');
+            objectiveContent.style.display = 'block';
+            objectiveContent.classList.add('fade-in');
+        });
+    </script>
+</body>
+</html>
