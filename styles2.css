@@ -1,0 +1,327 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for the body */
+    color: #e0e0e0; /* Light text color for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1f1f1f; /* Slightly lighter dark background */
+    border-bottom: 1px solid #3a3a3a; /* Subtle border for separation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #00bcd4; /* Light cyan color for brand */
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #e0e0e0;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00bcd4; /* Matching brand color */
+    transition: width 0.3s ease-out;
+}
+
+.nav-link:hover {
+    color: #e0e0e0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+}
+
+/* Mini Navbar styles */
+.mini-navbar {
+    width: 30%;
+    margin: 20px auto;
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+.mini-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.mini-nav-item {
+    color: #00bcd4; /* Matching brand color */
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mini-nav-item:hover,
+.mini-nav-item.active {
+    background-color: #00bcd4; /* Matching brand color */
+    color: #121212; /* Dark background for active items */
+}
+
+/* Content area styles */
+.content-area {
+    padding: 120px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    transition: opacity 0.3s ease; /* Smooth fade effect for content updates */
+}
+
+.book-card {
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    height: 80%;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Flex Container for Buttons */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons if the container is too small */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+    margin: 20px 0; /* Optional: Adjust margin as needed */
+}
+
+/* Button Styles */
+.details-button {
+    background-color: #0af;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #fff;
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 120%;
+}
+
+.close-button {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.book-review {
+    display: flex;
+    align-items: flex-start;
+}
+
+.book-review-image img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.book-review-content {
+    flex: 1;
+}
+
+.book-review-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.book-review-info {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.book-review-ratings {
+    margin-bottom: 10px;
+}
+
+.star {
+    color: #ffd700; /* Yellow color for stars */
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.book-review-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.book-review-vocabulary {
+    margin-top: 20px;
+}
+
+.book-review-vocabulary h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.book-review-vocabulary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.book-review-vocabulary li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+/* Background Image Section */
+.background-image {
+    background-image: url('https://myreadingvintage.com/cdn/shop/articles/write_a_book_review_1570x.png?v=1703781850');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Adjust height as needed */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.background-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:black;
+}
+
+.background-content p {
+    font-size: 18px;
+    margin: 0;
+    color:black;
+}
+/* Gradient Bar Section */
+.gradient-bar {
+    background: linear-gradient(90deg, #00f9ff, #0061ff, #00d1ff, #0034ff, #00b2ff);
+    height: 2px; /* Adjust height as needed */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1099; /* Ensure it’s above the navbar */
+    animation: gradient-animation 3s linear infinite;
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(90deg, #00f9ff, #0061ff, #00d1ff, #0034ff, #00b2ff);
+    }
+    50% {
+        background: linear-gradient(90deg, #00d1ff, #0034ff, #00b2ff, #00f9ff, #0061ff);
+    }
+    100% {
+        background: linear-gradient(90deg, #00b2ff, #00f9ff, #0061ff, #00d1ff, #0034ff);
+    }
+}
+

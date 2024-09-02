@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Gradient Bar Section -->
+<section class="gradient-bar"></section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">DP ENGLISH</a>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Background Image Section -->
+<section class="background-image">
+    <div class="background-content">
+        <h2>DP ENGLISH</h2>
+        <p>Discover my book journal.</p>
+    </div>
+</section>
+
+
+    <!-- Main Content Area -->
+    <section class="content-area">
+        <!-- Mini Navbar -->
+        <div class="mini-navbar">
+            <ul class="mini-nav">
+                <li class="mini-nav-item active" data-category="all">All</li>
+                <li class="mini-nav-item" data-category="fiction">Fiction</li>
+                <li class="mini-nav-item" data-category="non-fiction">Non-Fiction</li>
+            </ul>
+        </div>
+
+        <!-- Book Grid -->
+        <div class="book-grid">
+            <!-- Book Card -->
+<div class="book-card" data-category="fiction">
+    <img src="https://m.media-amazon.com/images/I/91j9eAlIH+L._AC_UF1000,1000_QL80_.jpg" alt="Book 1" style="height: 50%;">
+    <p>Ernest Cline</p>
+    <h3>Ready Player One</h3>
+    <p>Virtual reality, the impact of technology, nostalgia for 1980s culture</p>
+    <button class="details-button" data-target="#book1-modal">View Details</button>
+</div>
+
+<!-- Book Review Modal -->
+<div class="modal" id="book1-modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="book-review">
+            <div class="book-review-image">
+                <img src="https://m.media-amazon.com/images/I/91j9eAlIH+L._AC_UF1000,1000_QL80_.jpg" alt="Book Cover" style="width:100%;">
+            </div>
+            <div class="book-review-content">
+                <h2 class="book-review-title">Ready Player One</h2>
+                <p class="book-review-info">Author: Ernest Cline</p>
+                <p class="book-review-info">Genre: Science Fiction</p>
+                <p class="book-review-info">Published: August 2011</p>
+                <div class="book-review-ratings">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="book-review-description">Ready Player One is a wild, immersive dive into a future where the real world has gone so far downhill that most people prefer to escape into the OASIS, a massive virtual reality universe. The story centers on Wade Watts, a teenager with a tough life in the real world, who spends most of his time in the OASIS. When the eccentric creator of the OASIS, James Halliday, dies, he leaves behind a mind-bending challenge: find his hidden Easter egg in the virtual world, and the winner gets not only his immense fortune but also control of the entire OASIS.
+
+                    Wade is one of millions trying to crack Halliday’s puzzle, but it’s no easy task. The game is steeped in 1980s pop culture references—Halliday’s obsession—which means Wade has to be more than just a skilled gamer; he has to be a walking encyclopedia of old-school movies, music, and video games. As he makes progress, the stakes get dangerously high. Ruthless corporations, led by the villainous IOI, are willing to do anything—including murder—to take over the OASIS. Wade’s quest quickly turns into a life-or-death struggle, not just for him but for everyone he cares about.</p>
+                <div class="book-review-vocabulary">
+                    <h3>Vocabulary List</h3>
+                    <ul>
+                        <li><strong>Dystopian:</strong> A society characterized by human misery, often under totalitarian rule.</li>
+                        <li><strong>OASIS:</strong> A massive virtual reality universe where people live, work, and play.</li>
+                        <li><strong>Easter egg:</strong> A hidden message, image, or feature in a video game or movie.</li>
+                        <li><strong>Avatar:</strong> A graphical representation of a user or the user's character in virtual reality.</li>
+                        <li><strong>Pop Culture:</strong> Modern popular culture transmitted via mass media and aimed particularly at younger people.</li>
+                        <!-- Add more words as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="book-card" data-category="fiction">
+    <img src="https://m.media-amazon.com/images/I/81-TfDNN1GL._AC_UF1000,1000_QL80_.jpg" alt="Book 1" style="height: 50%;">
+    <p>Sachin Tendulkar</p>
+    <h3>Playing It My Way</h3>
+    <p>Dedication, passion, challenges of professional sports.</p><br>
+    <button class="details-button" data-target="#book2-modal">View Details</button>
+</div>
+
+<!-- Book Review Modal -->
+<div class="modal" id="book2-modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="book-review">
+            <div class="book-review-image">
+                <img src="https://m.media-amazon.com/images/I/81-TfDNN1GL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover" style="width:100%;">
+            </div>
+            <div class="book-review-content">
+                <h2 class="book-review-title">Playing It My Way</h2>
+                <p class="book-review-info">Author: Sachin Tendulkar</p>
+                <p class="book-review-info">Genre: Autobiography, Sports</p>
+                <p class="book-review-info">Published: November 2014</p>
+                <div class="book-review-ratings">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="book-review-description">Playing It My Way is Sachin Tendulkar's autobiography, offering a fascinating glimpse into the life of one of cricket's greatest icons. The book takes you on a journey from Sachin’s early days as a cricket-obsessed kid in Mumbai to his rise as a global sports legend. He opens up about his personal experiences, sharing stories that range from his rigorous training sessions to the moments of doubt and pressure that shaped him both as a player and as a person. With a mix of humility and honesty, Sachin reflects on the highs and lows of his extraordinary career, giving readers an inspiring tale of hard work, passion, and relentless dedication to his craft.
+
+
+
+
+
+
+
+                </p>
+                <div class="book-review-vocabulary">
+                    <h3>Vocabulary List</h3>
+                    <ul>
+                        <li><strong>Autobiography:</strong> A self-written account of one's own life.</li>
+                        <li><strong>Cricket:</strong> A bat-and-ball game played between two teams of eleven players.</li>
+                        <li><strong>Innings:</strong> A period in a cricket match during which a team takes its turn to bat.</li>
+                        <li><strong>Century:</strong> A score of 100 or more runs by a batsman in a single innings.</li>
+                        <li><strong>Perseverance:</strong> Persistence in doing something despite difficulty or delay in achieving success.</li>
+                        <!-- Add more words as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="book-card" data-category="non-fiction">
+    <img src="https://m.media-amazon.com/images/I/71r2IY98HwL._AC_UF1000,1000_QL80_.jpg" alt="Book 1" style="height: 50%;">
+    <p>Walter Isaacson</p>
+    <h3>The Innovators</h3>
+    <p> Innovation, teamwork, history of technology</p><br>
+    <button class="details-button" data-target="#book3-modal">View Details</button>
+</div>
+
+<!-- Book Review Modal -->
+<div class="modal" id="book3-modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="book-review">
+            <div class="book-review-image">
+                <img src="https://m.media-amazon.com/images/I/71r2IY98HwL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover" style="width:100%;">
+            </div>
+            <div class="book-review-content">
+                <h2 class="book-review-title">The Innovators</h2>
+                <p class="book-review-info">Author: Walter Isaacson</p>
+                <p class="book-review-info">Genre: Non-fiction, History, Technology</p>
+                <p class="book-review-info">Published: October 2014</p>
+                <div class="book-review-ratings">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="book-review-description">The Innovators by Walter Isaacson is a captivating dive into the real stories behind the digital revolution. Isaacson doesn't just chart the rise of groundbreaking technologies like the computer and the internet; he brings to life the people who made it all happen. These pioneers weren’t just geniuses—they were passionate problem-solvers, collaborators, and dreamers who worked together to push the limits of what was possible. Isaacson weaves together their stories with a focus on their creativity, teamwork, and relentless drive, showing how their collective efforts have shaped the world we live in today. It's a tribute to the hackers, geeks, and visionaries who turned their ideas into reality, changing our lives in the process.
+
+
+
+
+
+
+
+                </p>
+                <div class="book-review-vocabulary">
+                    <h3>Vocabulary List</h3>
+                    <ul>
+                        <li><strong>Innovation:</strong> The act of introducing something new or improving existing products, processes, or ideas.</li>
+                        <li><strong>Collaboration:</strong> The action of working with someone to produce or create something.</li>
+                        <li><strong>Revolution:</strong> A fundamental change in the way of thinking about or visualizing something.</li>
+                        <li><strong>Digital:</strong> Involving or relating to the use of computer technology.</li>
+                        <li><strong>Pioneer:</strong> A person who is among the first to explore or settle a new area or develop a new technology.</li>
+                        <!-- Add more words as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="book-card" data-category="non-fiction">
+    <img src="https://m.media-amazon.com/images/I/81SlrVsShvL._AC_UF1000,1000_QL80_.jpg" alt="Book 1" style="height: 50%;">
+    <p>Ashlee Vance</p>
+    <h3>Elon Musk</h3>
+    <p>in-depth look at the life and achievements of Elon Musk</p><br>
+    <button class="details-button" data-target="#book4-modal">View Details</button>
+</div>
+<!-- Book Review Modal -->
+<div class="modal" id="book4-modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="book-review">
+            <div class="book-review-image">
+                <img src="https://m.media-amazon.com/images/I/81SlrVsShvL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover" style="width:100%;">
+            </div>
+            <div class="book-review-content">
+                <h2 class="book-review-title">Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future</h2>
+                <p class="book-review-info">Author: Ashlee Vance</p>
+                <p class="book-review-info">Genre: Biography, Non-fiction, Technology</p>
+                <p class="book-review-info">Published: May 2015</p>
+                <div class="book-review-ratings">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="book-review-description">Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future is much more than just a biography—it's an eye-opening look into the mind of one of today's most daring and visionary entrepreneurs. Ashlee Vance takes readers on a riveting journey through Elon Musk’s life, from his early years in South Africa to becoming the powerhouse behind companies like Tesla, SpaceX, and SolarCity. Vance doesn’t just recount Musk’s successes; he delves into the man’s relentless drive, his ability to bounce back from failures, and his audacious goals to reshape the future. Whether it’s revolutionizing sustainable energy or dreaming of life on other planets, Musk’s story is a testament to what can happen when ambition meets resilience.
+
+
+
+
+
+
+
+                </p>
+                <div class="book-review-vocabulary">
+                    <h3>Vocabulary List</h3>
+                    <ul>
+                        <li><strong>Innovation:</strong> The process of creating new ideas, products, or methods that significantly improve or transform existing systems.</li>
+                        <li><strong>Entrepreneur:</strong> A person who starts and manages a business, often taking on financial risks to do so.</li>
+                        <li><strong>Resilience:</strong> The ability to recover quickly from difficulties or setbacks.</li>
+                        <li><strong>Sustainability:</strong> The practice of using resources in a way that ensures they will be available for future generations.</li>
+                        <li><strong>Interplanetary:</strong> Relating to or existing between planets, often used in the context of space exploration.</li>
+                        <!-- Add more words as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- Pop-up Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-text">Modal Content</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
